@@ -1,0 +1,27 @@
+{
+  "prefs": {
+    "EmacsBindingsBannerState": "\"Dismissed\"",
+    "FontName": "\"JetBrainsMono Nerd Font\"",
+    "RestoreSession": "false",
+    "ExperimentId": "42103c89-0707-4e95-8718-f54af48d56d3",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "WorkflowsBoxOpen": "true",
+    "InputMode": "\"Waterfall\"",
+    "AutosuggestionAcceptedCount": "2",
+    "Notifications": "{\"mode\":\"Enabled\",\"is_long_running_enabled\":true,\"long_running_threshold\":{\"secs\":30,\"nanos\":0},\"is_password_prompt_enabled\":true}",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "SystemTheme": "true",
+    "WelcomeTipsCompleted": "true",
+    "AliasExpansionEnabled": "true",
+    "StartupShellOverride": "\"zsh\"",
+    "FontSize": "14.0",
+    "AliasExpansionBannerSeen": "true",
+    "ChangelogVersions": "{\"v0.2024.02.27.08.01.stable_03\":true,\"v0.2024.03.05.08.02.stable_00\":true,\"v0.2024.03.05.08.02.stable_01\":true}",
+    "Shortcuts": "true",
+    "OverrideOpacity": "87",
+    "SelectedSystemThemes": "{\"light\":\"Light\",\"dark\":{\"Custom\":{\"name\":\"Nord\",\"path\":\"/home/antonio/.local/share/warp-terminal/themes/nord.yaml\"}}}",
+    "Spacing": "\"Compact\"",
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":9,\"next_refresh_time\":\"2024-03-09T16:40:23.413669Z\"}",
+    "WelcomeTipsFeaturesUsed": "[{\"Action\":\"OpenWarpDrive\"},{\"Action\":\"AiCommandSearch\"},{\"Hint\":\"CreateBlock\"},{\"Action\":\"CommandSearch\"},{\"Action\":\"ThemePicker\"},{\"Action\":\"WarpAI\"},{\"Action\":\"CommandPalette\"},{\"Hint\":\"BlockSelect\"},{\"Hint\":\"BlockAction\"}]"
+  }
+}
