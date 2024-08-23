@@ -23,23 +23,31 @@ config = { settings = { args = ["--server"] } }
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
-[language-server.rust-analyzer.config]
-inlayHints.bindingModeHints.enable = false
-inlayHints.closingBraceHints.minLines = 10
-inlayHints.closureReturnTypeHints.enable = "with_block"
-inlayHints.discriminantHints.enable = "fieldless"
-inlayHints.lifetimeElisionHints.enable = "skip_trivial"
-inlayHints.typeHints.hideClosureInitialization = false
+[language-server.rust-analyzer.config.check]
+command = "clippy"
 
+[[language]]
+name = "rust"
+language-servers = [ "rust-analyzer" ]
+# scope = "source.rust"
+# injection-regex = "rs|rust"
+# file-types = ["rs"]
+# roots = ["Cargo.toml", "Cargo.lock"]
+# shebangs = ["rust-script", "cargo"]
+# auto-format = true
+# comment-tokens = ["//", "///", "//!"]
+# block-comment-tokens = [
+#   { start = "/*", end = "*/" },
+#   { start = "/**", end = "*/" },
+#   { start = "/*!", end = "*/" },
+# ]
+
+# indent = { tab-width = 4, unit = "    " }
+# persistent-diagnostic-sources = ["rustc", "clippy"]
 
 [language-server.sql-language-server]
 command = "sql-language-server"
 args = ["up", "--method", "stdio"]
-
-[[language]]
-name = "sql"
-language-servers = [ "sql-language-server" ]
-
 
 [language-server.typescript-language-server]
 command = "typescript-language-server"
@@ -90,3 +98,11 @@ name = "json"
 language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
 
 
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java", "jav", "pde"]
+roots = ["pom.xml", "build.gradle", "build.gradle.kts"]
+language-servers = [ "jdtls" ]
+indent = { tab-width = 2, unit = "  " }
