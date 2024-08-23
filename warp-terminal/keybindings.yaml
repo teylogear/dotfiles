@@ -1,3 +1,5 @@
 ---
 "workspace:new_tab": ctrl-t
-"workspace:close_active_tab": ctrl-w
+"terminal:focus_input": none
+"notebookview:focus_terminal_input": none
+"editor_view:clear_and_copy_lines": none
