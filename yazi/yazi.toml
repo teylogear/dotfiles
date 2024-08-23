@@ -1,0 +1,14 @@
+[opener]
+edit = [
+	{ run = 'hx "$@"', block = true, for = "unix", desc = "helix" },
+	{ run = 'code "$@"', orphan = true, for = "unix" },
+]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+	{ run = 'celluloid "$@"', orphan = true, for = "unix" },
+]
+
+[open]
+prepend_rules = [
+	{ name = "*.html", use = [ "edit", "open", "reveal" ] },
+]
