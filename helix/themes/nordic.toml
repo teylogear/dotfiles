@@ -1,0 +1,21 @@
+# Custom nord theme
+
+inherits = 'nord-night'
+
+## EDITOR UI COLORS
+"ui.background" = { }
+"ui.menu" = { }
+"ui.popup" = { }
+"ui.popup.info" = { }
+"ui.help" = { }
+
+# Statusline
+"ui.statusline" = { }
+"ui.statusline.inactive" = { }
+"ui.statusline.insert" = { fg = "#bf616a" }
+"ui.statusline.normal" = { }
+"ui.statusline.select" = { fg = "#88c0d0" }
+
+[palette]
+nord0 = '#252933'
+nord4 = '#C0C5CF'
