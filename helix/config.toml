@@ -1,12 +1,19 @@
-theme = "nord-night"
+theme = "nordic"
 
 [editor]
 line-number = "relative"
 mouse = true
+color-modes = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+right = ["file-type", "version-control", "diagnostics", "selections", "register", "position", "file-encoding"]
 
 [keys.insert]
 "A-x" = "normal_mode"
