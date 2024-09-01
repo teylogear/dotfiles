@@ -1,0 +1,64 @@
+@-moz-document url(about:newtab), url(about:home){
+:root {
+  color-scheme: light dark;
+  --bg: light-dark(#d8dee9, #333333);
+  --fg: ligtht-dark(#2e3440, #d8dee9);
+}
+
+body {
+  background-color: var(--bg) !important;
+}
+
+.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
+  background-color: var(--bg) !important;
+  border-radius: 8px;
+  outline: 2px solid #81a1c1;
+
+  & .top-site-icon {
+    opacity: 1;
+  }
+
+  & .title {
+    opacity: 1;
+  }
+}
+
+.top-site-button {
+
+  & .tile {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  & .top-site-icon {
+    background-color: transparent !important;
+    opacity: 0.6;
+  }
+
+  & .title {
+    color: var(--fg) !important;
+    opacity: 0.6;
+  }
+}
+
+.context-menu {
+  background-color: var(--bg) !important;
+  color: var(--fg) !important;
+  box-shadow: none !important;
+  outline: 2px solid #81a1c1;
+}
+
+.search-wrapper {
+  opacity: 0.6;
+}
+
+.search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button {
+  border: 2px solid #81a1c1 !important;
+  box-shadow: none !important;
+}
+
+.search-wrapper .search-handoff-button,
+.search-wrapper input {
+  background: var(--newtab-search-icon) 16px center no-repeat !important;
+}
+}

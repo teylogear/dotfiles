@@ -1,0 +1,78 @@
+/* color scheme */
+:root {
+  --bg-primary: light-dark(#d8dee9cc, #333333cc);
+  --bg-secondary: light-dark();
+  --fg-primary: ligtht-dark(#2e3440cc, #d8dee9cc);
+  --fg-secondary: light-dark();
+}
+
+/* disposition */
+#navigator-toolbox {
+  border-bottom: 0 !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--bg-primary) !important;
+  color: var(--fg-primary) !important;
+
+  &:-moz-window-inactive {
+    background-color: var(--bg-primary);
+    color: var(--fg-primary);
+  }
+}
+
+/* remove UI elements */
+#forward-button,
+#back-button,
+.titlebar-buttonbox-container,
+.titlebar-spacer {
+  display: none;
+}
+
+/* bookmarks */
+#PersonalToolbar {
+  width: 100vw;
+  background-color: var(--bg-primary) !important;
+  color: var(--fg-primary) !important;
+}
+
+/* search bar */
+#nav-bar {
+  border-top: 0 !important;
+  background-color: transparent !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+  top: 100px !important;
+  left: calc(-100vw + 474px + 15vw) !important;
+  width: 70vw !important;
+  border: 2px solid #81a1c1;
+}
+
+#urlbar:is([focused], [open])>#urlbar-background {
+  background-color: light-dark(#d8dee9cc, #333333cc) !important;
+}
+
+/* title bar */
+#titlebar {
+  flex: auto;
+}
+
+/* menu-bar */
+:root[tabsintitlebar] {
+  & #toolbar-menubar[autohide="true"] {
+    position: absolute;
+  }
+}
+
+#menubar-items {
+  justify-content: center !important;
+  z-index: 1000;
+  background-color: light-dark(#d8dee9cc, #333333cc);
+  border: 2px solid #81a1c1;
+}
+
+/* tabs bar */
+#TabsToolbar {
+  align-items: center;
+}
