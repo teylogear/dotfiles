@@ -1,0 +1,3 @@
+pip install ruff basedpyright
+
+npm i -g emmet-ls vscode-langservers-extracted
