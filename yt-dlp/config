@@ -1,2 +1,5 @@
 -S "height:720"
 -o "%(title)s.%(ext)s"
+--write-subs
+--add-chapters
+--sub-langs all,-live_chat
