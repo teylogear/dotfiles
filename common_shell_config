@@ -1,6 +1,0 @@
-alias l='exa --icons'
-alias ll='exa --icons -l'
-alias la='exa --icons -la'
-
-alias f='yazi'
-alias fzp='fzf --preview="bat --color=always {}"'
