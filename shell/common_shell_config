@@ -1,0 +1,28 @@
+#aliases
+
+alias l='exa --icons'
+alias ll='exa --icons -l'
+alias la='exa --icons -la'
+
+alias f='yazi'
+alias fzp='fzf --preview="bat --color=always {}"'
+
+
+#configs
+
+# fnm
+FNM_PATH="$HOME/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
+
+# deno
+. "$HOME/.deno/env"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# rust
+. "$HOME/.cargo/env"
