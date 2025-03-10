@@ -1,3 +1,6 @@
+/* for debug activate the options chrome toolbox and remote debbuging */
+/* then press CNTRL + SHIFT + ALT + I */
+
 /* color scheme */
 :root {
   --bg-primary: light-dark(#d8dee9cc, #333333cc);
@@ -44,7 +47,7 @@
 
 #urlbar[breakout][breakout-extend] {
   top: 100px !important;
-  left: calc(-100vw + 474px + 15vw) !important;
+  left: calc(15vw) !important;
   width: 70vw !important;
   border: 2px solid #81a1c1;
 }
@@ -59,9 +62,10 @@
 }
 
 /* menu-bar */
-:root[tabsintitlebar] {
-  & #toolbar-menubar[autohide="true"] {
+#toolbar-menubar {
+  &[autohide="true"] {
     position: absolute;
+    z-index: 9;
   }
 }
 
